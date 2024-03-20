@@ -1,0 +1,165 @@
+body {
+    cursor: url(./images/Normal\ Select.cur), auto;
+    background-color: black;
+    height: 100vh;
+}
+
+a {
+    cursor: url(./images/Link\ Select.cur), auto;
+
+}
+p {
+    color: white;
+    
+}
+
+.grid {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    ". header header ."
+    ". content content ."
+    ". . . bin"
+    ;
+}
+
+.bin{
+    grid-area: bin;
+}
+
+.header{
+    grid-area: header ;
+    /* background-color: rgb(75, 35, 9); */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.header img {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+    height: 50%;
+    width: 50%;
+
+    
+}
+
+.content{    
+    grid-area: content ;
+    /* background-color: rgb(77, 49, 201); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "file1 file2 file3"
+    "file4 file5 file6";
+    
+}
+
+.footer{
+    grid-area: footer ;
+    background-color: black;
+    height: fit-content;
+    
+}
+
+.file1 {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+.file2 {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+.file3 {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+.file4 {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+.file5 {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+.file6 {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+  #popup-window {
+    display:none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f00707; /* Light gray background */
+    border: 2px solid #333; /* Dark border */
+    padding: 20px;
+    box-shadow: 0 10px 10px rgba(243, 241, 241, 0.5); /* Drop shadow */
+    z-index: 9999;
+    width: 300px; /* Adjust width as needed */
+}
+
+.popup-header {
+    position: relative;
+    color: white; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+} 
+
+.popup-title {
+    font-size: 18px;
+    
+}
+
+#close-button {
+    position: absolute; /* Position the close button relative to the header */
+    top: 5px; /* Adjust top position as needed */
+    right: 5px; /* Adjust right position as needed */
+    background: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.popup-content {
+    margin-top: 10px;
+}
+
+.popup-header img {
+    max-width: 100%; /* Ensure the image fits the container width */
+    max-height: 100%; /* Ensure the image fits the container height */
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+

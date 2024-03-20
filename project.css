@@ -1,0 +1,150 @@
+html {
+  cursor: url(./images/Normal\ Select.cur), auto;
+}
+
+body {
+    background-color: black;
+    max-width: 700px;
+    margin: auto;    
+    
+}
+
+a {
+    cursor: url(./images/Link\ Select.cur), auto;
+
+}
+p {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 1fr 3fr ;
+    grid-template-areas:
+    ". header header ."
+    ". content content ."
+    ;
+}
+
+.header{
+    grid-area: header ;
+    color:white;
+    font-family: "Trebuchet MS", sans-serif;
+  font-size: 5em;
+  letter-spacing: -2px;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+    
+}
+
+.content{
+    grid-area: content;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .container-doc {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .text-doc{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .volume{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left:0;
+    top:0;
+  }
+
+  button:hover {
+    cursor: url(./images/Link\ Select.cur), auto;
+    }
+
+/* new gallery */
+
+.gallery {
+  width: 90%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-content:center;
+  align-items: center; 
+}
+
+/* Styling Particular Image */
+.gallery-img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+/* onHover image will expand little bit */
+.gallery-img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+/* This section will be seen when we click on image */
+.image-popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* close button when we want to close the bigger image */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size:60px;
+  color: #fff;
+  cursor: pointer;
+}
+.close-button:hover{
+  color: red;
+}
+
+/* when we click on the image it will expand in bigger size and will displayed 
+at middle of screen */
+#popupImage {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ 

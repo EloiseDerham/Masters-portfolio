@@ -1,0 +1,71 @@
+<!DOCTYPE HTML >
+
+<html lang = "en">
+    <head>
+        <link href="./project.css" rel="stylesheet"/>
+        <title>Projects</title>
+        <style>
+            body, html {
+              height: 100%;
+              font-family: "Inconsolata", sans-serif;
+            }
+            
+            </style>
+        
+        
+    </head>
+    <button onClick="togglePlay()">
+        <img class = "volume"src="./images/speaker.png" alt="volume logo">
+    </button>
+    <audio id="audio" src="./audio/bad_gyalz.mp3"></audio>
+    <body>
+        <div class="w3-container" id="about">   
+            <div style="max-width:700px">
+
+              <header class="header">
+                VJing
+              </header>
+
+              <p>Below are pieces I created during the Roundhouse Young Creatives VJing course. 
+                We experimented with the MadMapper software to create new visuals,
+                 edit existing videos, and project them in collaboration with live music. </p>
+              <p>I really enjoyed being able to edit and distort existing videos in connection with music. 
+                  I found the process similar to collaging, collecting and arranging different forms of media with different shapes , 
+                  patterns and colours.</p>
+              <p>Unfortunately due to my computer's processing power, some of the videos below are lagging.
+                 With a higher processing speed these would be a lot smoother.</p>  
+
+              <p>Please enjoy the pieces with music by clicking the sound icon in the corner.</p>
+              
+              
+            
+              <div class="row">
+                <div class="column">
+                    <video width="100%" height="100%" controls>
+                        <source src="./videos/VJ videos/head.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+                <div class = "row">
+                    <div class="column">
+                        <video width="100%" height="100%" controls>
+                            <source src="./videos/VJ videos/triangle video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class="column">
+                        <video width="100%" height="100%" controls>
+                            <source src="./videos/VJ videos/eyes.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                    </div>
+                </div>
+              
+             
+            </div>
+          </div>
+    <script src="scripts.js"></script>
+    </body>

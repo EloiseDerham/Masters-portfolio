@@ -1,0 +1,51 @@
+<!DOCTYPE HTML >
+
+<html lang = "en">
+    <head>
+        <link href="./project.css" rel="stylesheet"/>
+        <title>Projects</title>
+        <style>
+            body, html {
+              height: 100%;
+              font-family: "Inconsolata", sans-serif;
+            }
+            
+            </style>      
+        
+    </head>
+
+
+    <body>
+        <div class="w3-container" id="about">   
+            <div style="max-width:700px">
+
+              <header class="header">
+                Collage
+              </header>
+
+              <br>
+
+            <div class = "gallery">          
+              
+              <img src="./images/Gallery/collage8.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage2.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage3.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage4.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage5.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage6.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage7.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage1.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage9.jpg" class="gallery-img" onclick="showImage(src)">
+              <img src="./images/Gallery/collage10.jpg" class="gallery-img" onclick="showImage(src)">
+
+            </div>
+
+            <div class="image-popup-container" id="imagePopup">
+              <span class="close-button" onclick="closeImage()">×</span>
+              <img src="" alt="Popup Image" id="popupImage">
+            </div>                
+
+              </div>                      
+          </div>
+    <script src="scripts.js"></script>
+    </body>
